@@ -17,6 +17,18 @@ class GuestbookServiceTest {
     private GuestbookService service;
 
     @Test
+    public void testRegister() {
+
+        GuestbookDTO guestbookDTO = GuestbookDTO.builder()
+                .title("Sample Title...")
+                .content("Sample Content...")
+                .writer("user0")
+                .build();
+
+        System.out.println(service.register(guestbookDTO));
+
+    }
+
     public void testList(){
 
         PageRequestDTO pageRequestDTO = PageRequestDTO.builder().page(1).size(10).build();
