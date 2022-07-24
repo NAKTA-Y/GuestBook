@@ -5,6 +5,8 @@ import org.zerock.guestbook.entity.Guestbook;
 
 public interface GuestbookService {
 
+    Long register(GuestbookDTO dto);
+
     default Guestbook dtoToEntity(GuestbookDTO dto) {
         Guestbook entity = Guestbook.builder()
                 .gno(dto.getGno())
