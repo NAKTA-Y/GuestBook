@@ -3,7 +3,6 @@ package org.zerock.guestbook.entity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Getter
